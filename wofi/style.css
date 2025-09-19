@@ -1,0 +1,65 @@
+/* Main window: dark, semi-transparent black */
+window {
+    background-color: rgba(10, 0, 0, 0.85); /* almost black with a hint of red */
+    border: 3px solid #FF0000; /* bright red border */
+    border-radius: 8px;
+    box-shadow: 0 0 15px 4px rgba(255, 0, 0, 0.6); /* glowing red shadow */
+}
+
+/* Search bar (entry): dark red background, red text */
+entry {
+    background-color: rgba(41, 9, 9, 0.9);
+    color: #FF3333; /* bright red text */
+    border: 2px solid #FF0000;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-family: 'Hack', monospace; /* or your favorite terminal font */
+    font-size: 16px;
+    text-shadow: 0 0 4px #FF0000;
+}
+
+/* Placeholder text in search bar */
+entry placeholder {
+    color: #3f1c1c;
+    font-style: italic;
+}
+
+/* List container */
+listview {
+    background-color: rgba(20, 0, 0, 0.8);
+    border-top: 1px solid #FF0000;
+    border-radius: 0 0 8px 8px;
+}
+
+/* List items */
+listview row {
+    padding: 6px 15px;
+    color: #FF6666;
+    font-weight: bold;
+    font-family: 'Hack', monospace;
+}
+
+/* Highlighted (selected) list item */
+listview row:selected {
+    background-color: rgba(255, 0, 0, 0.7);
+    color: black;
+    text-shadow: 0 0 8px #FF0000;
+}
+
+/* Hover effect on list items */
+listview row:hover {
+    background-color: rgba(255, 0, 0, 0.4);
+    color: #FF1111;
+}
+
+/* Scrollbar (if visible) */
+scrollbar {
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+scrollbar slider {
+    background-color: #FF0000;
+    border-radius: 3px;
+}
+
